@@ -1,0 +1,24 @@
+CREATE TABLE items (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, color TEXT, sizes TEXT, price INTEGER);
+
+INSERT INTO items VALUES (1, "shirts", 100, 5, 5, 10);
+INSERT INTO items VALUES (2, "long sleeve shirts", 100, 5, 5, 15);
+INSERT INTO items VALUES (3, "shorts", 75, 5, 5, 20);
+INSERT INTO items VALUES (4, "pants", 75, 2, 6, 30);
+INSERT INTO items VALUES (5, "sweatpants", 60, 3, 5, 25);
+INSERT INTO items VALUES (6, "leggings", 60, 10, 6, 35);
+INSERT INTO items VALUES (7, "sportbras", 60, 10, 10, 30);
+INSERT INTO items VALUES (8, "socks", 100, 5, 5, 10);
+INSERT INTO items VALUES (9, "underwear", 200, 10, 10, 10);
+INSERT INTO items VALUES (10, "jeans", 75, 3, 10, 30);
+INSERT INTO items VALUES (11, "sweaters", 50, 5, 5, 20);
+INSERT INTO items VALUES (12, "cardigans", 40, 3, 5, 20);
+INSERT INTO items VALUES (13, "pullovers", 40, 4, 4, 25);
+INSERT INTO items VALUES (14, "undershirts", 100, 2, 5, 10);
+INSERT INTO items VALUES (15, "gloves", 20, 3, 3, 5);
+
+SELECT * FROM items WHERE price <=10 ORDER BY price;
+SELECT * FROM items WHERE color >=5 ORDER BY price;
+SELECT * FROM items WHERE sizes<=3 ORDER BY price;
+SELECT * FROM items WHERE quantity <=50 ORDER BY price;
+SELECT SUM(price)FROM items;
+
