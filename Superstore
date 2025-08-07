@@ -1,0 +1,40 @@
+-- 1 items ordered by price
+SELECT item_name
+FROM superstore
+GROUP BY price;
+
+--2 show sum of price
+SELECT SUM(price)
+FROM superstore;
+
+--3 show avg of price
+SELECT AVG(price)
+FROM superstore;
+
+--4 show min of price
+SELECT MIN(price)
+FROM superstore;
+
+--5 show max of price
+SELECT MAX(price)
+FROM superstore;
+
+--6 show count of price
+SELECT COUNT(price)
+FROM superstore;
+
+--7 kitchen supplies price
+SELECT AVG(price), 'Kitchen Supplies'
+FROM superstore;
+
+--8 average rating of appliances
+SELECT AVG(average_rating), 'Appliances'
+FROM superstore;
+
+--9 count stock quantity of furnishings
+SELECT COUNT(stock_quantity), 'Furnishings'
+FROM superstore;
+
+--10 show max item bought from electronics
+SELECT MAX(item_name), 'Electronics'
+FROM superstore;
